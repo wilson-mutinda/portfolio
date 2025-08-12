@@ -97,7 +97,7 @@ function Dashboard() {
             
             <div className="pt-20 px-4 max-w-6xl mx-auto space-y-8">
                 {/* Hero Section */}
-                <section id="home" className="flex flex-col md:flex-row items-center gap-8 min-h-screen pt-20">
+                <section id="home" className="flex flex-col md:flex-row items-center gap-8 pt-4">
                     <img src="/user.png" alt="profile" className="w-40 h-40 rounded-full border-4 border-blue-500" />
                     <div>
                         <h4 className="text-2xl font-bold">Wilson Mutinda</h4>
@@ -110,7 +110,7 @@ function Dashboard() {
                 </section>
 
                 {/* About section */}
-                <section id="about" className="py-16">
+                <section id="about" className="pt-4 rounded-md bg-white p-4">
                     <h5 className="text-xl font-semibold mb-2 text-center">About Me</h5>
                     <p className="text-gray-600 mb-6">
                         I'm a software developer with a strong background in database systems, backend and <br /> frontend development. Skilled in Django, Python,
@@ -127,7 +127,7 @@ function Dashboard() {
                 </section>
 
                 {/* Skills Section */}
-                <section id="skills" className="py-16">
+                <section id="skills" className="pt-4">
                     <h5 className="text-xl font-semibold mb-4 text-center">Skills</h5>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="bg-white shadow p-4 rounded-lg">
@@ -154,7 +154,7 @@ function Dashboard() {
                 </section>
 
                 {/* Projects section */}
-                <section id="projects" className="py-16">
+                <section id="projects" className="pt-4">
                     <h5 className="text-xl font-semibold mb-4 text-center">Projects</h5>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {projects.map((project) => (
@@ -167,7 +167,7 @@ function Dashboard() {
                 </section>
 
                 {/* Education Section */}
-                <section id="education" className="py-16">
+                <section id="education" className="pt-4">
                     <h5 className="text-xl font-semibold mb-4 text-center">Education</h5>
                     <div className="bg-white shadow p-4 rounded-lg">
                         <p className="font-medium">BSc in Information Technology</p>
@@ -178,7 +178,7 @@ function Dashboard() {
                 </section>
 
                 {/* Contact Section */}
-                <section id="contact" className="py-16">
+                <section id="contact" className="pt-4">
                     <h5 className="text-xl font-semibold mb-4 text-center">Get In Touch</h5>
                     <div className="flex justify-between flex-col md:flex-row gap-4">
                         <div className="bg-white shadow p-6 rounded-lg flex-1">
@@ -225,7 +225,7 @@ function Dashboard() {
                     </div>
                 </section>
                 {/* Copyright Section */}
-                <footer className="bg-gray-900 text-white py-4 mt-8 text-center text-sm">
+                <footer className="bg-gray-900 text-white py-4 mt-8 text-center text-sm w-full">
                     © {new Date().getFullYear()} Wilson Mutinda. All rights reserved.
                 </footer>
             </div>
