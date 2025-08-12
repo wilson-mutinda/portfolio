@@ -71,7 +71,7 @@ function Dashboard() {
                     {/* Desktop Menu */}
                     <ul className="hidden md:flex gap-6 font-medium text-gray-600">
                         {sections.map((section) => (
-                            <li key={section.id} onClick={() => handleScroll(section.id)} className={`cursor-pointer px-3 py-1 rounded-md transition ${activeSection === section.id ? "bg-blue-500" : "hover:text-blue-600"}`}>
+                            <li key={section.id} onClick={() => handleScroll(section.id)} className={`cursor-pointer px-3 py-1 rounded-md transition ${activeSection === section.id ? "bg-blue-500 text-white" : "hover:text-blue-600"}`}>
                                 {section.label}
                             </li>
                         ))}
