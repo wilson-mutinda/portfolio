@@ -224,11 +224,11 @@ function Dashboard() {
                         </div>
                     </div>
                 </section>
-                {/* Copyright Section */}
-                <footer className="bg-gray-900 text-white py-4 mt-8 text-center text-sm w-full">
+            </div>
+            {/* Copyright Section */}
+                <footer className="bg-gray-900 text-white py-4 mt-8 text-center text-sm">
                     © {new Date().getFullYear()} Wilson Mutinda. All rights reserved.
                 </footer>
-            </div>
         </div>
     )
 }
