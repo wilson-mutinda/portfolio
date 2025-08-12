@@ -66,12 +66,12 @@ function Dashboard() {
             {/* Navbar */}
             <nav className="fixed top-0 left-0 w-full bg-white shadow z-50">
                 <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between">
-                    <h1 className="text-2xl font-bold text-indigo-600">My Portfolio</h1>
+                    <h1 className="text-2xl font-bold text-blue-500">My Portfolio</h1>
 
                     {/* Desktop Menu */}
                     <ul className="hidden md:flex gap-6 font-medium text-gray-600">
                         {sections.map((section) => (
-                            <li key={section.id} onClick={() => handleScroll(section.id)} className={`cursor-pointer px-3 py-1 rounded-md transition ${activeSection === section.id ? "bg-blue-500" : "hover:text-indigo-600"}`}>
+                            <li key={section.id} onClick={() => handleScroll(section.id)} className={`cursor-pointer px-3 py-1 rounded-md transition ${activeSection === section.id ? "bg-blue-500" : "hover:text-blue-600"}`}>
                                 {section.label}
                             </li>
                         ))}
@@ -87,7 +87,7 @@ function Dashboard() {
                 {menuOpen && (
                     <div className="md:hidden bg-white shadow px-4 py-3 space-y-2">
                         {sections.map((section) => (
-                            <p key={section.id} onClick={() => handleScroll(section.id)} className={`cursor-pointer px-3 py-1 rounded-md transition ${activeSection === section.id ? "bg-blue-500 text-white" : "hover:text-indigo-600"}`}>
+                            <p key={section.id} onClick={() => handleScroll(section.id)} className={`cursor-pointer px-3 py-1 rounded-md transition ${activeSection === section.id ? "bg-blue-500 text-white" : "hover:text-blue-600"}`}>
                                 {section.label}
                             </p>
                         ))}
@@ -98,12 +98,12 @@ function Dashboard() {
             <div className="pt-20 px-4 max-w-6xl mx-auto space-y-8">
                 {/* Hero Section */}
                 <section id="home" className="flex flex-col md:flex-row items-center gap-8 min-h-screen pt-20">
-                    <img src="/user.png" alt="profile" className="w-40 h-40 rounded-full border-4 border-indigo-600" />
+                    <img src="/user.png" alt="profile" className="w-40 h-40 rounded-full border-4 border-blue-500" />
                     <div>
                         <h4 className="text-2xl font-bold">Wilson Mutinda</h4>
                         <p className="text-gray-500 mb-4">Full-Stack Developer | Django | Rails | API Specialist | Problem Solver</p>
                         <div className="flex gap-4">
-                            <button onClick={() => handleScroll('projects')} className="rounded-md bg-green-500 px-4 py-2 text-white hover:bg-green-700">View My Work</button>
+                            <button onClick={() => handleScroll('projects')} className="rounded-md bg-gray-500 px-4 py-2 text-white hover:bg-gray-700">View My Work</button>
                             <button onClick={() => handleScroll('contact')} className="rounded-md bg-blue-500 px-4 py-2 text-white hover:bg-blue-700">Contact Me</button>
                         </div>
                     </div>
@@ -187,13 +187,13 @@ function Dashboard() {
                                 <span>0791738418</span></p>
                             <p className="flex gap-2 mb-2 items-center">
                                 <img src="/email.svg" alt="email" width={30} />
-                                <span><a href="mailto:mutidawilz@gmail.com" className="text-indigo-600 hover:underline">mutidawilz@gmail.com</a></span></p>
+                                <span><a href="mailto:mutidawilz@gmail.com" className="text-blue-500 hover:underline">mutidawilz@gmail.com</a></span></p>
                             <p className="flex gap-2 mb-2 items-center">
                                 <img src="/github.png" alt="github" width={30} />
-                                <span><a href="https://github.com/wilson-mutinda" target="_blank" rel="noreferrer" className="text-indigo-600 hover:underline">https://github.com/wilson-mutinda</a></span></p>
+                                <span><a href="https://github.com/wilson-mutinda" target="_blank" rel="noreferrer" className="text-blue-500 hover:underline">https://github.com/wilson-mutinda</a></span></p>
                             <p className="flex gap-2 mb-2 items-center">
                                 <img src="/linkedin.png" alt="linkedin" width={30} />
-                                <span><a href="https://linkedin.com/in/wilson-kilonzo-mutinda" target="_blank" rel="noreferrer" className="text-indigo-600 hover:underline">https://linkedin.com/in/wilson-kilonzo-mutinda</a></span></p>
+                                <span><a href="https://linkedin.com/in/wilson-kilonzo-mutinda" target="_blank" rel="noreferrer" className="text-blue-500 hover:underline">https://linkedin.com/in/wilson-kilonzo-mutinda</a></span></p>
                         </div>
 
                         {/* contact form */}
@@ -203,21 +203,21 @@ function Dashboard() {
 
                                 <div className="">
                                     <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
-                                    <input type="text" name="name" id="name" className="mt-1 ring-1 ring-gray-500 mb-2 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200" />
+                                    <input type="text" name="name" id="name" className="mt-1 ring-1 ring-gray-500 mb-2 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-400" />
                                 </div>
 
                                 <div className="">
                                     <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
-                                    <input type="email" name="email" id="email" className="mt-1 ring-1 ring-gray-500 mb-2 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200" />
+                                    <input type="email" name="email" id="email" className="mt-1 ring-1 ring-gray-500 mb-2 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-400" />
                                 </div>
 
                                 <div className="">
                                     <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
-                                    <textarea name="message" id="message" rows={4} className="mt-1 ring-1 ring-gray-500 mb-2 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200" placeholder="Write your message here..."></textarea>
+                                    <textarea name="message" id="message" rows={4} className="mt-1 ring-1 ring-gray-500 mb-2 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-400" placeholder="Write your message here..."></textarea>
                                 </div>
 
                                 {/* button */}
-                                <button type="submit" className="w-full rounded-md bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-700 transition">
+                                <button type="submit" className="w-full rounded-md bg-blue-500 px-4 py-2 text-white hover:bg-blue-600 transition">
                                     Send
                                 </button>
                             </form>
